@@ -1,0 +1,12 @@
+.project {
+    background-color: #1C2A34;
+    border-radius: 5px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    box-shadow: #111A20;
+    padding: 15px;
+}
+
+.project-names {
+    font-weight: 500;
+}

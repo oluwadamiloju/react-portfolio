@@ -1,0 +1,28 @@
+.heart-icon {
+    color: #82F9A1;
+}
+
+.author-name {
+    color: white;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-navbar{
+    display: flex;
+    float: left;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.second-navbar{
+    display: flex;
+    float: right;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
