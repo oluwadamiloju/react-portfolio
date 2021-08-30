@@ -1,0 +1,10 @@
+.all-articles{
+    text-align: left;
+    width: 100%;
+    padding-left: 30px
+}
+
+.smaller-paragraph {
+    color: #416883;
+    font-size: 10px;
+}

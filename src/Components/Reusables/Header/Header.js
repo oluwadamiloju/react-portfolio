@@ -10,7 +10,7 @@ const Header = () => {
                 <BsFillHeartFill/>  <span className="author-name">Sarah Akinkunmi</span> 
             </div>
             <div className="second-navbar">
-                <a href="Articles/Page/Page">Articles</a>
+                <a href="./Articles/ArticlePage">Articles</a>
                 <a href="Snippets/Page/Page">Snippets</a>
                 <a href="About/Page/Page">About</a>
                 <Button title="Contact"></Button>

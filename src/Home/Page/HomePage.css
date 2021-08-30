@@ -75,10 +75,11 @@ h2{
 .chat-section {
     display:inline-block;
     background-color: #1C2A34;
-    padding-top: 20px;
+    margin: auto;
+    padding-top: 15px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     width: 100%;
     text-align: center;
 }

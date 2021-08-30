@@ -4,13 +4,13 @@ import Articles from '../../Components/Reusables/Articles/Articles'
 import Projects from '../../Components/Reusables/Projects/Projects'
 import Button from '../../Components/Reusables/Button/Button'
 import Footer from '../../Components/Reusables/Footer/Footer'
-import './Page.css'
+import './HomePage.css'
 import {HiOutlineChevronDoubleRight} from "react-icons/hi"
 import {SiJavascript, SiReact, SiStorybook} from "react-icons/si"
 import {MdChatBubbleOutline} from "react-icons/md"
 
 
-const Page = () => {
+const HomePage = () => {
     return (
         <div>
            <Header/>
@@ -33,8 +33,8 @@ const Page = () => {
             <h2 className="projects">Projects</h2>
             <Projects style={{ borderLeft: '8px solid #CCA9F4', width: '100%', height:'230px' }} header="Yawnch" paragraph="An online coworking community for indie hackers, entrepreneurs, and founders. Chat live with app developers, designers, and mentors. Access video courses and tutorials."/><br/>
             <div className="projects-below">
-                <Projects style={{ borderLeft: '8px solid #81F59B', width: '40%', height:'230px' }} header="Stockstream.tv" paragraph="On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."/>
-                <Projects style={{ borderLeft: '8px solid #D9534D', width: '40%', height:'230px' }} header="All Turtles" paragraph="I lead web development full time at All Turtles, an AI startup studio."/>
+                <Projects className="first-project" style={{ borderLeft: '8px solid #81F59B', width: '40%', height:'230px' }} header="Stockstream.tv" paragraph="On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."/>
+                <Projects className="second-project" style={{ borderLeft: '8px solid #D9534D', width: '40%', height:'230px' }} header="All Turtles" paragraph="I lead web development full time at All Turtles, an AI startup studio."/>
             </div>
             <br/><br/>
             <section className="chat-section">
@@ -47,4 +47,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default HomePage
