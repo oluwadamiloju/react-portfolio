@@ -2,12 +2,11 @@ import React from 'react'
 import Header from '../../Components/Reusables/Header/Header'
 import Articles from '../../Components/Reusables/Articles/Articles'
 import Projects from '../../Components/Reusables/Projects/Projects'
-import Button from '../../Components/Reusables/Button/Button'
+import ChatSection from '../../Components/ChatSection'
 import Footer from '../../Components/Reusables/Footer/Footer'
 import './HomePage.css'
 import {HiOutlineChevronDoubleRight} from "react-icons/hi"
 import {SiJavascript, SiReact, SiStorybook} from "react-icons/si"
-import {MdChatBubbleOutline} from "react-icons/md"
 
 
 const HomePage = () => {
@@ -31,17 +30,13 @@ const HomePage = () => {
                 <Articles logo = {<SiStorybook color="#FF4785"/>}  text="Easy project switching with Itermocil & command line shortcuts" date="September 08, 2019" />
             </div>
             <h2 className="projects">Projects</h2>
-            <Projects style={{ borderLeft: '8px solid #CCA9F4', width: '100%', height:'230px' }} header="Yawnch" paragraph="An online coworking community for indie hackers, entrepreneurs, and founders. Chat live with app developers, designers, and mentors. Access video courses and tutorials."/><br/>
-            <div className="projects-below">
-                <Projects className="first-project" style={{ borderLeft: '8px solid #81F59B', width: '40%', height:'230px' }} header="Stockstream.tv" paragraph="On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."/>
-                <Projects className="second-project" style={{ borderLeft: '8px solid #D9534D', width: '40%', height:'230px' }} header="All Turtles" paragraph="I lead web development full time at All Turtles, an AI startup studio."/>
+            <div className="projects-grid">
+                <Projects className="one" style={{ borderLeft: '8px solid #CCA9F4', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px'}} header="Yawnch" paragraph="An online coworking community for indie hackers, entrepreneurs, and founders. Chat live with app developers, designers, and mentors. Access video courses and tutorials."/>
+                <Projects className="two" style={{ borderLeft: '8px solid #81F59B', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px' }} header="Stockstream.tv" paragraph="On a mission to democratize investing knowledge. My partner and I bootstrapped this company with zero funding."/>
+                <Projects className="three" style={{ borderLeft: '8px solid #D9534D', height:'230px', backgroundColor: '#1C2A34', borderRadius: '10px', boxShadow: '#111A20', padding: '15px' }} header="All Turtles" paragraph="I lead web development full time at All Turtles, an AI startup studio."/>
             </div>
             <br/><br/>
-            <section className="chat-section">
-                <h1>What are you working on?</h1>
-                <p>Let’s have a conversation! I’d love to hear about what you’re <br/> working on and find a way to work together.</p>
-                <p><Button className="chat-button" style={{backgroundColor: '#83F9A2', color: '#111A20', border: 'none', fontWeight: '800'}} logo={<MdChatBubbleOutline color="#111A20"/>} title="Chat"/></p>
-            </section>
+            <ChatSection/>
             <Footer /> 
         </div>
     )
