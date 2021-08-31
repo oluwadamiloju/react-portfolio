@@ -5,6 +5,7 @@ body {
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
+    /* padding-left: 30px */
 }
 
 h1 {
@@ -13,5 +14,4 @@ h1 {
     padding-top: 5%;
     text-align: left;
     font-size: 40px;
-    /* padding-left: 30px */
 }
